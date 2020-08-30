@@ -1,67 +1,132 @@
-body{
-  font-size: 16px;
-  padding-top: 50px;
-  font-family: Tahoma;
-  background-color: ghostwhite;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Courgette&family=Montserrat+Alternates:ital,wght@1,300&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.tt{
-  font-size:1.5em;
+html{
+  scroll-behavior: smooth;
 }
 
-.bigie{
-  font-size: 20px;
-}
-
-.social-feed li {
-  display: inline-block;
+::-moz-selection {
+  background: #34495e;
   color: #fff;
-  padding: 5px;
 }
-.social-feed ul {
+
+::selection {
+  background: #34495e;
+  color: #fff;
+}
+
+.photo-cover{
+  background: #34495e url(pic.jpeg) no-repeat center center/cover fixed;
+  height: 100%;
+  position: relative;
+}
+
+a, li, button{
+  font-family: 'Lora', sans-serif;
+  font-size: 18px !important;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+
+.intro{
+  margin-top: 290px;
+  margin-bottom: 320px;
+}
+
+nav{
+  background-color: rgba(0, 180, 216, 0.5) !important;
+}
+
+.main-body
+{
+  color: ghostwhite;
+}
+
+.nav-link
+{
+  color: ghostwhite !important;
+  margin-right: 15px !important;
+}
+
+.navbar-brand{
+  color: ghostwhite !important;
+  margin-left: 30px !important;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.jumbotron {
+  padding-top: 140px !important;
+  padding-bottom: 140px !important;
+  margin-bottom: 0 !important;
+}
+
+p{
+  font-size: 22px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.size-img{
+  width: 15%;
+}
+
+.size-img:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+body{
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container > div{
+  font-size: 26px !important;
+}
+
+.icon{
+  cursor: pointer;
+  color: rgb(57, 168, 168);
+}
+
+.icon:hover{
+  color: rgba(0, 140, 186, 0.5);
+}
+
+.margin-div{
+  margin-bottom: 50px ;
+}
+
+#fixed-width {
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.foot{
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  color: rgb(57, 168, 168);
+}
+
+.list-inline{
+  list-style-type: none;
   padding: 0;
 }
 
-#freecode{
- margin-top: 5px;
-  margin-left: 4px;
-  font-size: 1em;
-  color: white;
+.list-inline li{
+  display: inline;
+  margin: 4px 7px;
 }
 
-.carousel-caption{
-  
-  left: 50% !important;
-   top:  50%;
-  right: auto!important;
-  bottom:   auto!important;
-  transform: translate(-50% , -50%);
-  font-size: 30px;
-  background-color: rgba(0 , 0 , 0 , 0.85);
-  border-radius: 20px;
-  padding: 20px;
+.medium {
+  font-size: 2em;
 }
-
-.carousel-inner img {
-  margin: auto;
-  width: 80%;
-}
-
-.carousel-caption h3{
-  font-size: 1em
-}
-
-.footer{
-  height: 50px;
-  margin: auto;
-}
-
-
-.but:hover{
-    background-color:black !important;
-  border-color: blue;
-  
-  }
-
-
